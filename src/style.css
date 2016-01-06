@@ -25,9 +25,9 @@ header {
   background-position: 110% 105%;
   background-repeat: no-repeat;
   height: 380px;
-  width: 100%;
-  top: 0px;
-  right: 0px;
+  width: 380px;
+  top: 0;
+  right: -50px;
 }
 
 nav {
@@ -42,12 +42,20 @@ nav {
   box-shadow: 2px 2px 2px rgba(0,0,0,.3);
 }
 
-.nav-menu li {
+.nav-menu a {
+  z-index: 1;
   list-style: none;
+  text-decoration: none;
   font-family: 'Curely', 'Berkshire Swash', cursive;
   font-size: 1.75em;
   padding: 6px 30px;
   color: #5C544B;
+}
+
+.nav-menu a:hover {
+  cursor: pointer;
+  color: #CFF8DD;
+  background: #928779;
 }
 
 .main {
