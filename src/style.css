@@ -1,6 +1,35 @@
 body {
   background: #928779;
   color: #CFF8DD;
+  margin: 0;
+}
+
+.header-rose {
+  position: absolute;
+  z-index: 2;
+  top: -50px;
+  right: -80px;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  top: 50px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  background: #CFF8DD;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+}
+
+.nav-menu li {
+  list-style: none;
+  font-family: 'Curely', 'Berkshire Swash', cursive;
+  font-size: 1.75em;
+  padding: 6px 30px;
+  color: #928779;
 }
 
 .main {
@@ -11,6 +40,7 @@ body {
   font-family: 'Curely', 'Berkshire Swash', cursive;
   font-size: 3.5em;
   letter-spacing: 1px;
+  margin: 0;
   text-shadow: 2px 2px 2px rgba(0,0,0,.3);
 }
 
@@ -25,13 +55,14 @@ body {
 .main p {
   font-family: 'Playfair Display SC', serif;
   font-size: 1.25em;
+  margin: 0;
   letter-spacing: .5px;
   text-shadow: 2px 2px 2px rgba(0,0,0,.3);
 }
 
 h2 {
   font-family: 'Curely', 'Berkshire Swash', cursive;
-  letter-spacing: 1px;
+  letter-spacing: 1.25px;
   text-shadow: 2px 2px 2px rgba(0,0,0,.3);
 }
 
