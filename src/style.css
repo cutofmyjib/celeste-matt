@@ -69,7 +69,7 @@ nav {
 
 .main-title {
   font-family: 'Curely', 'Berkshire Swash', cursive;
-  font-size: 3.5em;
+  font-size: 4.5em;
   letter-spacing: 1px;
   margin: 0;
   text-shadow: 2px 2px 2px rgba(0,0,0,.3);
@@ -81,21 +81,25 @@ nav {
   letter-spacing: .5px;
   text-shadow: 2px 2px 2px rgba(0,0,0,.3);
   display: inline-block;
+  padding: 0;
 }
 
 .main p {
   font-family: 'Playfair Display SC', serif;
-  font-size: 1.25em;
+  font-size: 1.5em;
   margin: 0;
   letter-spacing: .5px;
   text-shadow: 2px 2px 2px rgba(0,0,0,.3);
-  line-height: 50%;
+  padding: 0;
 }
 
 h2 {
   font-family: 'Curely', 'Berkshire Swash', cursive;
-  letter-spacing: 1.25px;
+  font-size: 1.75em;
+  letter-spacing: 1.5px;
+  margin-bottom: .5em;
   text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+  line-height: 20%;
 }
 
 footer {
