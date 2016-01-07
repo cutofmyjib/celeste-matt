@@ -120,6 +120,27 @@ footer {
   bottom: 0;
 }
 
+/******************************
+          DETAILS
+******************************/
+.break-fig8 {
+  background-image: url(break-fig8.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 24px 0;
+  height: 40px;
+  width: 130px;
+}
+
+.break-heart {
+  background-image: url(break-heart.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 24px 0;
+  height: 60px;
+  width: 130px;
+}
+
 @font-face {
   font-family: 'Curely'
   src: url('Curely-Free-Typeface.otf');
