@@ -147,10 +147,12 @@ footer {
           GALLERY
 ******************************/
 .gallery {
+  margin: 0;
+  padding: 0;
   max-width: 950px;
   margin: auto;
   display: flex;
-  justify-content: row;
+  justify-content: center;
   flex-flow: row wrap;
 }
 
@@ -161,6 +163,7 @@ footer {
   height: 200px;
   margin: 10px;
   border: 10px solid #E3E4D8;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.3);
 }
 
 .gallery li img {
@@ -168,6 +171,48 @@ footer {
   height: 100%;
   object-fit: cover;
 }
+
+.gallery-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+}
+
+a.gallery-backward, a.gallery-forward {
+  opacity: 1;
+}
+
+.gallery-backward {
+  z-index: 1;
+  display: block;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  background-image: url(gallery-arrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 95px;
+  width: 85px;
+}
+
+.gallery-forward {
+  z-index: 1;
+  display: block;
+  background-image: url(gallery-arrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 95px;
+  width: 85px;
+}
+
+a.gallery-backward:hover, a.gallery-forward:hover {
+  cursor: pointer;
+  opacity: .5;
+}
+
 
 @font-face {
   font-family: 'Curely'
