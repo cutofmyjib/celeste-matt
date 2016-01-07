@@ -5,7 +5,7 @@ body {
 
 .wrapper {
   background-image: url(header-lace.png), url(footer-lace.png);
-  background-position: 5% -10%, 100% 100%;
+  background-position: 0% 0%, 100% 100%;
   background-repeat: no-repeat, no-repeat;
   background-color: #928779;
   color: #CFF8DD;
@@ -16,17 +16,6 @@ header {
   overflow: hidden;
   height: 380px;
   margin-bottom: -80px;
-}
-
-.header-rose {
-  position: absolute;
-  background-image: url(header-rose.png);
-  background-position: 110% 105%;
-  background-repeat: no-repeat;
-  height: 380px;
-  width: 380px;
-  top: 0;
-  right: -50px;
 }
 
 nav {
@@ -63,7 +52,6 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
-  /*height: 200px;*/
 }
 
 .main-title {
@@ -110,6 +98,20 @@ footer {
   margin-top: -75px;
 }
 
+/******************************
+          INDEX
+******************************/
+.header-rose {
+  position: absolute;
+  background-image: url(header-rose.png);
+  background-position: 110% 105%;
+  background-repeat: no-repeat;
+  height: 380px;
+  width: 380px;
+  top: 0;
+  right: -50px;
+}
+
 .footer-rose {
   position: absolute;
   background-image: url(footer-rose.png);
@@ -139,6 +141,32 @@ footer {
   padding: 24px 0;
   height: 60px;
   width: 130px;
+}
+
+/******************************
+          GALLERY
+******************************/
+.gallery {
+  max-width: 950px;
+  margin: auto;
+  display: flex;
+  justify-content: row;
+  flex-flow: row wrap;
+}
+
+.gallery li {
+  box-sizing: border-box;
+  list-style: none;
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+  border: 10px solid #E3E4D8;
+}
+
+.gallery li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @font-face {
