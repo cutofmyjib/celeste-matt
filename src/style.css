@@ -52,6 +52,7 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
+  min-height: 175px
 }
 
 .main-title {
