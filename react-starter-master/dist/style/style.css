@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Curely;
+  src: url(Curely-Free-Typeface.otf);
+}
+
 body {
   display: flex;
   display: -webkit-flex;
@@ -41,7 +46,7 @@ nav {
   z-index: 1;
   list-style: none;
   text-decoration: none;
-  font-family: 'Curely', 'Berkshire Swash', cursive;
+  font-family: Curely, 'Berkshire Swash', cursive;
   font-size: 1.75em;
   padding: 6px 30px;
   color: #5C544B;
@@ -66,7 +71,7 @@ nav {
 }
 
 .main-title {
-  font-family: 'Curely', 'Berkshire Swash', cursive;
+  font-family: Curely, 'Berkshire Swash', cursive;
   font-size: 4.5em;
   letter-spacing: 1px;
   margin: 0;
@@ -92,7 +97,7 @@ nav {
 }
 
 h2 {
-  font-family: 'Curely', 'Berkshire Swash', cursive;
+  font-family: Curely, 'Berkshire Swash', cursive;
   font-size: 1.75em;
   letter-spacing: 1.5px;
   margin-bottom: .5em;
@@ -314,10 +319,4 @@ p.p-blurb {
       background-position: -10% 125%;
     }
 }
-
-@font-face {
-  font-family: 'Curely'
-  src: url('Curely-Free-Typeface.otf');
-}
-
 
