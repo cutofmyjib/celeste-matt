@@ -5,7 +5,7 @@ import Ceremony from './ceremony.js';
 import Home from './home.js';
 import Wrapper from './wrapper.js'
 
-export default class App extends Component {
+class App extends Component {
   render() {
     return (
       <Router history={browserHistory}>
