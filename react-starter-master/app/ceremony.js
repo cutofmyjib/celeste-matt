@@ -7,7 +7,7 @@ export default class Ceremony extends Component {
       <div className='main'>
         <h1 className='main-title'>DETAILS</h1>
         <h2>Bride <span className='h2-span'>And</span> Groom</h2>
-        <p>Maria Celeste May Lozano & Matthew Steven Brunell</p>
+        <p>Maria Celeste May Lozano &amp; Matthew Steven Brunell</p>
         <div className='break-fig8'></div>
         <h2>Date</h2>
         <p>Saturday, October 29, 2016</p>
