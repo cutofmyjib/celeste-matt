@@ -1,6 +1,8 @@
 body {
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
+  -webkit-flex-direction: column;
   margin: 0;
 }
 
@@ -27,8 +29,10 @@ nav {
 
 .nav-menu {
   display: flex;
+  display: -webkit-flex;
   justify-content: center;
   align-items: center;
+  height: 40px;
   background: #CFF8DD;
   box-shadow: 2px 2px 2px rgba(0,0,0,.3);
 }
@@ -41,6 +45,7 @@ nav {
   font-size: 1.75em;
   padding: 6px 30px;
   color: #5C544B;
+  background: #CFF8DD;
 }
 
 .nav-menu a:hover {
@@ -51,7 +56,9 @@ nav {
 
 .main {
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
+  -webkit-flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -155,6 +162,7 @@ footer {
   max-width: 950px;
   margin: auto;
   display: flex;
+  display: -webkit-flex;
   justify-content: center;
   flex-flow: row wrap;
 }
@@ -177,6 +185,7 @@ footer {
 
 .gallery-nav {
   display: flex;
+  display: -webkit-flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
@@ -229,6 +238,7 @@ p.p-blurb {
   padding: 0;
   max-width: 950px;
   display: flex;
+  display: -webkit-flex;
   justify-content: center;
   flex-flow: row wrap;
 }
@@ -249,6 +259,60 @@ p.p-blurb {
   width: 100%;
   object-fit: contain;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-menu {
+      display: flex;
+      display: -webkit-flex;
+      background-image: url(menu.png);
+      background-size: 35px;
+      background-position: 5% 50%;
+      background-repeat: no-repeat;
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    .nav-menu a {
+      display: none;
+      background: #CFF8DD;
+      width: 100%;
+    }
+
+    .nav-menu:hover a {
+      display: flex;
+      display: -webkit-flex;
+      line-height: 10%;
+      padding: 24px;
+      /*font-size: 1.75em;*/
+      align-self: baseline;
+    }
+
+    .header-rose {
+      background-size: 80%;
+      background-position: 100% 100%;
+      width: 70%;
+      height: 70%;
+    }
+
+    .main-title-span {
+      display: block;
+    }
+
+    .registry {
+      min-width: 100%;
+    }
+
+    .registry li {
+      width: 80%;
+    }
+
+    .footer-rose {
+      background-size: 60%;
+      background-position: -10% 125%;
+    }
 }
 
 @font-face {
