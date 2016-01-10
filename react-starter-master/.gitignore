@@ -2,6 +2,7 @@ node_modules/
 dist/index_bundle.js
 dist/index_bundle.js.map
 dist/index.html
+dist/style/temp
 npm-debug.log
 ../.DS_Store
 ../src/.DS_Store
