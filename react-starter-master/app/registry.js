@@ -14,10 +14,10 @@ export default class Home extends Component {
           registry site. You can find our wedding registry name under 'registry name' 'placeholder text'.
         </p>
         <ul className='registry'>
-          <li><a href="www.amazon.com/gp/wedding/homepage" target="_blank"><img src='../style/rgstry-amazon.png' /></a></li>
-          <li><a href="www.crateandbarrel.com/gift-registry" target="_blank"><img src='../style/rgstry-crate.png' /></a></li>
-          <li><a href="www.rei.com/giftregistry" target="_blank"><img src='../style/rgstry-rei.png' /></a></li>
-          <li><a href="www.target.com/gift-registry/wedding-registry" target="_blank"><img src='../style/rgstry-target.png' /></a></li>
+          <li><a href="http://www.amazon.com/gp/wedding/homepage" target="_blank"><img src='../style/rgstry-amazon.png' /></a></li>
+          <li><a href="http://www.crateandbarrel.com/gift-registry" target="_blank"><img src='../style/rgstry-crate.png' /></a></li>
+          <li><a href="http://www.rei.com/giftregistry" target="_blank"><img src='../style/rgstry-rei.png' /></a></li>
+          <li><a href="http://www.target.com/gift-registry/wedding-registry" target="_blank"><img src='../style/rgstry-target.png' /></a></li>
         </ul>
         <div className='break-heart'></div>
       </div>
