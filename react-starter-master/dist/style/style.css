@@ -2,7 +2,6 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  height: 100vh;
 }
 
 #wrapper {
@@ -11,7 +10,7 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-color: #928779;
   color: #CFF8DD;
-  min-height: 100vh;
+  height: auto;
 }
 
 header {
@@ -94,7 +93,7 @@ h2 {
 }
 
 footer {
-  position: absolute;
+  position: relative;
   overflow: hidden;
   bottom: 0;
   width: 100%;
@@ -256,3 +255,5 @@ p.p-blurb {
   font-family: 'Curely'
   src: url('Curely-Free-Typeface.otf');
 }
+
+
