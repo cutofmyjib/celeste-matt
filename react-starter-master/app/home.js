@@ -5,15 +5,13 @@ import {render} from 'react-dom';
 export default class Home extends Component {
   render() {
     return (
-      <header>
-        <div className='header-rose'></div>
-        <nav className='nav-menu'>
-          <Link to="/">Our Wedding</Link>
-          <Link to="/details">Details</Link>
-          <Link to="/registry">Registry</Link>
-          <Link to="/photos">Photos</Link>
-        </nav>
-      </header>
-      )
+      <div className='main'>
+        <h1 className='main-title'>CELESTE <span className='main-title-span'>AND</span> MATT</h1>
+        <p>Saturday, October 29, 2016</p>
+        <h2>WISCONSIN CONSERVATORY OF MUSIC</h2>
+        <p>1584 N Prospect Ave,</p>
+        <p>Milwaukee, WI</p>
+      </div>
+    )
   }
 }
