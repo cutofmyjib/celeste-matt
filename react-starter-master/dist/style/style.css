@@ -53,7 +53,7 @@ nav {
   background: #CFF8DD;
 }
 
-.nav-menu a:hover {
+.nav-menu a:hover, .nav-menu a:focus {
   cursor: pointer;
   color: #CFF8DD;
   background: #928779;
@@ -286,15 +286,7 @@ p.p-blurb {
       width: 100%;
     }
 
-    .nav-menu:hover a {
-      display: flex;
-      display: -webkit-flex;
-      line-height: 10%;
-      padding: 24px;
-      align-self: baseline;
-    }
-    /*touch device*/
-    .nav-menu:focus a {
+    .nav-menu:hover a, .nav-menu:focus a {
       display: flex;
       display: -webkit-flex;
       line-height: 10%;
