@@ -291,7 +291,14 @@ p.p-blurb {
       display: -webkit-flex;
       line-height: 10%;
       padding: 24px;
-      /*font-size: 1.75em;*/
+      align-self: baseline;
+    }
+    /*touch device*/
+    .nav-menu:focus a {
+      display: flex;
+      display: -webkit-flex;
+      line-height: 10%;
+      padding: 24px;
       align-self: baseline;
     }
 
