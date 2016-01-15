@@ -280,18 +280,32 @@ p.p-blurb {
       align-items: flex-start;
     }
 
-    .nav-menu a {
+    .nav-menu ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-menu-ul {
       display: none;
       background: #CFF8DD;
       width: 100%;
     }
 
-    .nav-menu:hover a, .nav-menu:focus a {
+    .nav-menu-ul a {
+      line-height: 10px;
+      display: block;
+      padding: 24px;
+    }
+
+    .show {
       display: flex;
       display: -webkit-flex;
-      line-height: 10%;
-      padding: 24px;
-      align-self: baseline;
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      align-content: center;
+      -webkit-align-content: center;
+      width: 100%;
+
     }
 
     .header-rose {
