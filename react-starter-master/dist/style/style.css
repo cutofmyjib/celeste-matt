@@ -285,16 +285,10 @@ p.p-blurb {
   margin: 0 auto;
 }
 
-@media (max-width: 950px) {
-  .header-rose {
-    display: none;
-  }
-}
-
-@media (max-width: 1200px) {
+@media (max-width: 1295px) {
   .header-rose {
     background-size: 100%;
-    background-position: 100% 20%;
+    background-position: 100% 100%;
     width: 25%;
     height: 80%;
   }
@@ -308,6 +302,13 @@ p.p-blurb {
   }
 
 }
+
+@media (max-width: 950px) {
+  .header-rose {
+    display: none;
+  }
+}
+
 
 @media only screen and (max-width: 700px) {
     .nav-menu {
@@ -354,10 +355,10 @@ p.p-blurb {
 
     .header-rose {
       display: block;
-      background-size: 80%;
-      background-position: 100% 100%;
-      width: 70%;
-      height: 70%;
+      background-size: 100%;
+      background-position: 100% 120%;
+      width: 55%;
+      height: 80%;
     }
 
     .main {
@@ -382,3 +383,10 @@ p.p-blurb {
     }
 }
 
+@media only screen and (max-width: 500px) {
+  .header-rose {
+    background-position: 100% 100%;
+    width: 65%;
+    height: 70%;
+  }
+}
