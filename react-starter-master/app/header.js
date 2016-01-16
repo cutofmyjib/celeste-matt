@@ -21,7 +21,7 @@ export default class Header extends Component {
           <ul className={"nav-menu-ul " + (this.state.open ? "show" : "") } >
             <Link to="/">Our Wedding</Link>
             <Link to="/details">Details</Link>
-            <Link to="/registry">Accomodations</Link>
+            <Link to="/accomodations">Accomodations</Link>
             <Link to="/registry">Registry</Link>
             <Link to="/photos">Photos</Link>
           </ul>
