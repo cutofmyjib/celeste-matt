@@ -360,6 +360,10 @@ p.p-blurb {
       height: 70%;
     }
 
+    .main {
+      overflow: hidden;
+    }
+
     .main-title-span {
       display: block;
     }
