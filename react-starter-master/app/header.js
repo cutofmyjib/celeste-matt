@@ -18,15 +18,24 @@ export default class Header extends Component {
       <header>
         <div className='header-rose'></div>
         <nav onClick={this.handleClick} className='nav-menu'>
-          <ul className={"nav-menu-ul " + (this.state.open ? "show" : "") } >
-            <Link to="/">Our Wedding</Link>
-            <Link to="/details">Details</Link>
-            <Link to="/accomodations">Accomodations</Link>
+          <span className={"nav-menu-container " + (this.state.open ? "show" : "") } >
+            <span className="nesting-nav-wrapper"><Link to="/">Our Wedding</Link>
+              <span className="sub-nav">
+                <Link to="/ourstory">Our Story</Link>
+              </span>
+            </span>
+            <Link to="/rsvp">RSVP</Link>
+            <span className="nesting-nav-wrapper"><Link to="/details">Details</Link>
+              <span className="sub-nav">
+                <Link to="/accomodations">Accomodations</Link>
+              </span>
+            </span>
             <Link to="/registry">Registry</Link>
             <Link to="/photos">Photos</Link>
-          </ul>
+
+          </span>
         </nav>
       </header>
       )
-  }
+    }
 }
