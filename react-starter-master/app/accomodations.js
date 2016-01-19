@@ -6,7 +6,8 @@ export default class Accomodations extends Component {
     return (
       <div className='main'>
         <h1 className='main-title'>HOTEL ACCOMODATIONS</h1>
-        <p className='p-blurb'>Make an online reservation by clicking on the hotel name below.</p>
+        <p className='p-blurb'>The hotels listed below are specifically blocked out at a discounted rate less than the regular price and will expire Sept. 29,2016. </p>
+        <p className='p-blurb'>We would love for you stay at either of them since is it really close to the reception venue. Feel free to book your own accommodation elsewhere.</p>
         <h2><a className='main-a' href="https://www.starwoodmeeting.com/Book/lozanobrunellwedding" target="_blank">Aloft Milwaukee Downtown</a></h2>
         <p>1230 N Old World 3rd St,</p>
         <p>Milwaukee, Wisconsin 53212</p>
