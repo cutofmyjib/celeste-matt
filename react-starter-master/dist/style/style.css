@@ -33,7 +33,6 @@ nav {
 }
 
 .nav-menu {
-  height: 40px;
   display: flex;
   display: -webkit-flex;
   justify-content: center;
@@ -55,7 +54,6 @@ nav {
 
 .nav-menu-container li {
   list-style: none;
-  height: 40px;
   width: 150px;
   line-height: 40px;
   text-align: center;
@@ -357,11 +355,11 @@ p.p-blurb {
   }
 }
 
-
 @media only screen and (max-width: 700px) {
     .nav-menu {
       display: flex;
       /*display: -webkit-flex;*/
+      height: 40px;
       background-image: url(menu.png);
       background-size: 35px;
       background-position: 5% 50%;
@@ -371,43 +369,48 @@ p.p-blurb {
     .nav-menu-container {
       display: none;
       flex-direction: column;
-      /*-webkit-flex-direction: column;*/
+      -webkit-flex-direction: column;
       justify-content: flex-start;
-      /*-webkit-justify-content: flex-start;*/
+      -webkit-justify-content: flex-start;
       align-items: flex-start;
-      background: #CFF8DD;
-      height: 40px;
-      width: 700px;
+      background: lime;
+      height: 100%;
+      width: 100%;
     }
 
-    .sub-nav a{
-      display: block;
-      background: black;
-      z-index: 99;
+    .nav-menu-container li {
+      width: 100%;
     }
-    .nesting-nav-wrapper .sub-nav {
+
+    .nav-menu-container li a {
       display: block;
     }
 
-    .nav-menu-container > li, .nav-menu-container > li > ul > li {
-      display: block;
-      width: 700px;
+    .nav-menu-container li ul {
+      width: 100%;
     }
 
-    .nav-menu-container > li > a {
-      width: 700px;
-      display: block;
-      height: 40px;
-      line-height: 40px;
-      padding: 10px;
-      color: red;
-      background: orange;
+    .nav-menu-container li ul li {
+      width: 100%;
     }
 
+    .nav-menu-container li ul li a {
+      display: block;
+      width: 100%;
+    }
+
+    .sub-nav {
+      display: block;
+      position: relative;
+    }
+
+    .nesting-nav-wrapper {
+      position: relative;
+    }
 
     .show {
-      display: flex;
-      /*display: -webkit-flex;*/
+      display: block;
+      display: -webkit-flex;
       flex-direction: column;
       /*-webkit-flex-direction: column;*/
     }
