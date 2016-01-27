@@ -49,28 +49,50 @@ nav {
   display: -webkit-flex;
   flex-direction: row;
   -webkit-flex-direction: row;
-
+  font-family: Curely, 'Berkshire Swash', cursive;
+  font-size: 1.75em;
 }
 
-.nav-menu-container a {
+.nav-menu-container li {
   list-style: none;
   height: 40px;
   width: 150px;
-  text-decoration: none;
-  font-family: Curely, 'Berkshire Swash', cursive;
-  font-size: 1.75em;
   line-height: 40px;
-  color: #5B5B5B;
   text-align: center;
-  display: block;
   background: #CFF8DD;
+  color: #5B5B5B;
 }
 
-.nav-menu-container a:hover, .nav-menu-container a:focus {
-  z-index: 99;
-  cursor: pointer;
-  color: #CFF8DD;
+.nav-menu-container li:hover {
   background: #A0A0A1;
+  color: #CFF8DD;
+}
+
+.nav-menu-container li:hover a {
+  color: #CFF8DD;
+}
+
+.nav-menu-container li a {
+  text-decoration: none;
+  color: #5B5B5B;
+}
+
+.nav-menu-container li ul li {
+  opacity: 1;
+  background: #A0A0A1;
+  text-align: left;
+}
+
+.nav-menu-container li ul li a {
+  color: #CFF8DD;
+}
+
+.nav-menu-container li ul li:hover {
+  background: #E3E4D8;
+}
+
+.nav-menu-container li ul li:hover a {
+  color: #5B5B5B;
 }
 
 .sub-nav {
@@ -79,7 +101,6 @@ nav {
   padding: 0;
   margin: 0;
   position: absolute;
-
 }
 
 .sub-nav a {
@@ -356,17 +377,33 @@ p.p-blurb {
       align-items: flex-start;
       background: #CFF8DD;
       height: 40px;
+      width: 700px;
     }
 
-    .nav-menu-container a {
-      z-index: 99;
-      background: red;
-      /*height: 40px;*/
-      /*line-height: 40px;*/
+    .sub-nav a{
       display: block;
-      padding: 24px;
-      min-width: 700px;
+      background: black;
+      z-index: 99;
     }
+    .nesting-nav-wrapper .sub-nav {
+      display: block;
+    }
+
+    .nav-menu-container > li, .nav-menu-container > li > ul > li {
+      display: block;
+      width: 700px;
+    }
+
+    .nav-menu-container > li > a {
+      width: 700px;
+      display: block;
+      height: 40px;
+      line-height: 40px;
+      padding: 10px;
+      color: red;
+      background: orange;
+    }
+
 
     .show {
       display: flex;
