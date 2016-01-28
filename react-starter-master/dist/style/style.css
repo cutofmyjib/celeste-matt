@@ -356,6 +356,10 @@ p.p-blurb {
 }
 
 @media only screen and (max-width: 700px) {
+    header {
+      height: 450px;
+    }
+
     .nav-menu {
       display: flex;
       /*display: -webkit-flex;*/
@@ -373,17 +377,38 @@ p.p-blurb {
       justify-content: flex-start;
       -webkit-justify-content: flex-start;
       align-items: flex-start;
-      background: lime;
       height: 100%;
       width: 100%;
     }
 
-    .nav-menu-container li {
+    .nesting-nav-wrapper span {
+      padding-left: 24px;
+    }
+
+    .nav-menu-container > li {
       width: 100%;
+      text-align: left;
+      padding: 6px 0;
+      z-index: 99;
+    }
+
+    .nav-menu-container > li:nth-child(1):hover,
+    .nav-menu-container > li:nth-child(3):hover {
+      background: #CFF8DD;
+      color: #5B5B5B;
+    }
+
+    .nav-menu-container li:hover {
+      background: #E3E4D8;
+    }
+
+    .nav-menu-container li:hover a {
+      color: #5B5B5B;
     }
 
     .nav-menu-container li a {
       display: block;
+      padding-left: 24px;
     }
 
     .nav-menu-container li ul {
@@ -391,12 +416,15 @@ p.p-blurb {
     }
 
     .nav-menu-container li ul li {
+      padding-left: 24px;
       width: 100%;
+      background: #CFF8DD;
     }
 
     .nav-menu-container li ul li a {
       display: block;
       width: 100%;
+      color: #5B5B5B;
     }
 
     .sub-nav {
@@ -410,9 +438,6 @@ p.p-blurb {
 
     .show {
       display: block;
-      display: -webkit-flex;
-      flex-direction: column;
-      /*-webkit-flex-direction: column;*/
     }
 
     .header-rose {
