@@ -17,11 +17,11 @@ export default class Ceremony extends Component {
         <p>Wisconsin Conservatory of Music</p>
         <p>1584 N Prospect Ave, Milwaukee, WI 53202</p>
         <div className='break-fig8'></div>
-        <h2>Reception</h2>
-        <p>5:30 pm</p>
+        <h2>Cocktail/Reception</h2>
+        <p>5:30 - 6 pm</p>
         <p>Best Place at the Historic Pabst Brewery</p>
         <p>901 W Juneau Ave, Milwaukee, WI 53233</p>
-        <h2>Dinner</h2>
+        <h2>Dinner and Dancing to follow</h2>
         <p>6:30 pm</p>
         <div className='break-heart'></div>
       </div>
