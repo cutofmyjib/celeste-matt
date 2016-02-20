@@ -5,7 +5,6 @@ import {render} from 'react-dom';
 export default class Header extends Component {
   constructor() {
     super();
-    this.handleClick = this.handleClick.bind(this);
     this.state = { open: false }
   }
 
@@ -18,7 +17,7 @@ export default class Header extends Component {
     return (
       <header>
         <div className='header-rose'></div>
-        <nav onClick={this.handleClick} className='nav-menu'>
+        <nav onClick={this.handleClick.bind(this)} className='nav-menu'>
           <ul className={"nav-menu-container " + (this.state.open ? "show" : "") }>
             <li className="nesting-nav-wrapper">Our Wedding
               <ul className="sub-nav">
