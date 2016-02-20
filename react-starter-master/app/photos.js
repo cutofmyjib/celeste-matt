@@ -13,17 +13,20 @@ export default class Photos extends Component {
   }
 
   componentDidMount(){
-    base.bindToState('photos', {
+    this.ref = base.bindToState('photos', {
       context: this,
       state: 'photos',
       asArray: true
     });
   }
 
+  componentWillUnmount(){
+    base.removeBinding(this.ref);
+  }
+
   render() {
     if (this.state.photos) {
       var photosArray = this.state.photos.map(function(data){
-        console.log(data);
         return <Photo {...data} />
       })
     }
