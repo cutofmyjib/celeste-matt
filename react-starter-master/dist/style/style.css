@@ -387,7 +387,6 @@ p.p-blurb {
 
     .nav-menu {
       display: flex;
-      /*display: -webkit-flex;*/
       height: 40px;
       background-image: url(menu.png);
       background-size: 35px;
