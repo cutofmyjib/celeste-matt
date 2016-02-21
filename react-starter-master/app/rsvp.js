@@ -7,7 +7,7 @@ export default class Ceremony extends Component {
     return (
       <div className='main'>
         <h1 className='main-title'>RSVP</h1>
-        <small>Code: loveatfirstonsight</small>
+        <small>Please enter code: loveatfirstonsight</small>
         <div className='rsvp'>
           <iframe src="http://CelesteandMatt.rsvpify.com/" scrolling="yes" frameBorder="0"></iframe>
         </div>
