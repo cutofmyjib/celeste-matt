@@ -472,9 +472,9 @@ p.p-blurb {
       height: 80%;
     }
 
-    .main {
+    /*.main {
       overflow: hidden;
-    }
+    }*/
 
     .main-title-span {
       display: block;
@@ -487,20 +487,17 @@ p.p-blurb {
     .registry li {
       width: 80%;
     }
-/*
-    .rsvp {
-      height: 200px;
-    }
 
     iframe {
       -webkit-overflow-scrolling: touch;
       overflow-y: hidden;
-    }*/
+    }
 
     footer {
       height: 350px;
-      background: blue;
+      /*background: blue;*/
     }
+
     .footer-rose {
       background-size: 60%;
       background-position: -10% 125%;
