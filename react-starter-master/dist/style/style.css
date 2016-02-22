@@ -487,18 +487,18 @@ p.p-blurb {
     .registry li {
       width: 80%;
     }
-
+/*
     .rsvp {
-      height: 500px;
+      height: 200px;
     }
 
     iframe {
       -webkit-overflow-scrolling: touch;
-      overflow-y: scroll;
-    }
+      overflow-y: hidden;
+    }*/
 
     footer {
-      height: 450px;
+      height: 350px;
     }
     .footer-rose {
       background-size: 60%;
