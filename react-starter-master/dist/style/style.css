@@ -490,20 +490,11 @@ p.p-blurb {
 
     .rsvp {
       position: relative;
+      height: 650px;
+      overflow: scroll;
       -webkit-overflow-scrolling: touch;
       width: 100%;
     }
-/*
-iframe {
-  margin-top: 24px;
-  overflow:hidden;
-  overflow-x:hidden;
-  overflow-y:hidden;
-  height:100%;
-  width:100%;
-  position:absolute;
-  left: 0;
-}*/
 
     footer {
       height: 425px;
