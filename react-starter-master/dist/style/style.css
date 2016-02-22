@@ -490,9 +490,13 @@ p.p-blurb {
 
     iframe {
       -webkit-overflow-scrolling: touch;
-      height: 750px;
     }
 
+    .rsvp {
+      position: relative;
+      height: 650px;
+      width: 100%;
+    }
 /*
 iframe {
   margin-top: 24px;
