@@ -488,11 +488,18 @@ p.p-blurb {
       width: 80%;
     }
 
+    .rsvp {
+      height: 500px;
+    }
+
     iframe {
       -webkit-overflow-scrolling: touch;
       overflow-y: scroll;
     }
 
+    footer {
+      height: 450px;
+    }
     .footer-rose {
       background-size: 60%;
       background-position: -10% 125%;
