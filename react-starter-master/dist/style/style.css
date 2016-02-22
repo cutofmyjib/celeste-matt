@@ -488,6 +488,11 @@ p.p-blurb {
       width: 80%;
     }
 
+    iframe {
+      -webkit-overflow-scrolling: touch;
+      overflow-y: scroll;
+    }
+
     .footer-rose {
       background-size: 60%;
       background-position: -10% 125%;
