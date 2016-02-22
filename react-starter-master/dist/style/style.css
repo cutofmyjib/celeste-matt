@@ -499,6 +499,7 @@ p.p-blurb {
 
     footer {
       height: 350px;
+      background: blue;
     }
     .footer-rose {
       background-size: 60%;
