@@ -473,12 +473,8 @@ p.p-blurb {
     }
 
     .main {
-      position: relative;
+      overflow: hidden;
     }
-
-    /*.rsvp {
-      height: 100%;
-    }*/
 
     .main-title-span {
       display: block;
@@ -494,9 +490,20 @@ p.p-blurb {
 
     iframe {
       -webkit-overflow-scrolling: touch;
-      overflow-y: hidden;
-      z-index: 99;
+      height: 750px;
     }
+
+/*
+iframe {
+  margin-top: 24px;
+  overflow:hidden;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  height:100%;
+  width:100%;
+  position:absolute;
+  left: 0;
+}*/
 
     footer {
       height: 425px;
