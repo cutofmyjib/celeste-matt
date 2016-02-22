@@ -472,8 +472,12 @@ p.p-blurb {
       height: 80%;
     }
 
-    /*.main {
-      overflow: hidden;
+    .main {
+      position: relative;
+    }
+
+    /*.rsvp {
+      height: 100%;
     }*/
 
     .main-title-span {
@@ -494,7 +498,7 @@ p.p-blurb {
     }
 
     footer {
-      height: 350px;
+      height: 425px;
       /*background: blue;*/
     }
 
