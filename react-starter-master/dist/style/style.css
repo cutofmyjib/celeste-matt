@@ -488,14 +488,11 @@ p.p-blurb {
       width: 80%;
     }
 
-    iframe {
-      -webkit-overflow-scrolling: touch;
-    }
-
     .rsvp {
       position: relative;
       height: 650px;
       overflow: scroll;
+      -webkit-overflow-scrolling: touch;
       width: 100%;
     }
 /*
