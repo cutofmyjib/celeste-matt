@@ -495,11 +495,11 @@ p.p-blurb {
     iframe {
       -webkit-overflow-scrolling: touch;
       overflow-y: hidden;
+      z-index: 99;
     }
 
     footer {
       height: 425px;
-      /*background: blue;*/
     }
 
     .footer-rose {
