@@ -7,8 +7,8 @@ export default class Ourstory extends Component {
       <div className='main'>
         <h1 className='main-title'>OUR STORY</h1>
         <div className='story'>
-          <p>His Story:</p>
-          <p className='story-p'>
+          <h2>His Story:</h2>
+          <p>
             I first saw Celeste while sitting in my manager’s office. He was telling me about the new
             hardware engineer that he had just hired and was showing me her resume; he also told me that
             she was quite a ‘firecracker’. I thought she was cute, I think her resume may have been
@@ -30,9 +30,11 @@ export default class Ourstory extends Component {
             climbing, and then got a massage. Later that night we went to see O.A.R. at summerfest. We had
             a great time, and since then, we’ve been together nearly every day!
           </p>
+        </div>
 
-          <p>Her Story:</p>
-          <p className='story-p'>
+        <div className='story'>
+          <h2>Her Story:</h2>
+          <p>
             Where do I begin? Well I met Matt at Rockwell Automation in February of 2013 when I started working at my
             then new job. We both worked in the same department. One of the senior
             engineers took me around to meet everybody in the team when we stopped by his
