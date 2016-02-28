@@ -80,6 +80,7 @@ export default class Ourstory extends Component {
             dorky things together!
           </p>
         </div>
+        <div className='break-heart'></div>
       </div>
     );
   }
