@@ -48,8 +48,9 @@ nav {
   display: -webkit-flex;
   flex-direction: row;
   -webkit-flex-direction: row;
-  font-family: Curely, 'Berkshire Swash', cursive;
-  font-size: 1.75em;
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 700;
+  font-size: 1.25em;
 }
 
 .nav-menu-container li {
@@ -135,31 +136,30 @@ nav {
 .main-title {
   font-family: Curely, 'Berkshire Swash', cursive;
   font-size: 4.5em;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   margin: 0;
   text-shadow: 2px 2px 2px rgba(0,0,0,.3);
 }
 
-.main-title-span {
-  vertical-align: middle;
-  font-size: .5em;
-  letter-spacing: .5px;
+.main h2 {
+  font-family: 'Playfair Display SC', serif;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  font-size: 1.5em;
   text-shadow: 2px 2px 2px rgba(0,0,0,.3);
-  display: inline-block;
-  padding: 0;
 }
 
 .main p {
-  font-family: 'Playfair Display SC', serif;
-  font-size: 1.5em;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25em;
   margin: 0;
-  letter-spacing: .5px;
+  letter-spacing: .75px;
   text-shadow: 2px 2px 2px rgba(0,0,0,.3);
   padding: 0;
 }
 
 .main-a, .main-a-tel {
-  color: #E3E4D8;
+  color: #5B5B5B;
 }
 
 .main-a-tel {
@@ -167,15 +167,7 @@ nav {
 }
 
 .main-a:hover {
-  color: #BFE8B9;
-}
-
-h2 {
-  font-family: Curely, 'Berkshire Swash', cursive;
-  font-size: 1.75em;
-  letter-spacing: 1.5px;
-  margin-bottom: .5em;
-  text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+  opacity: .5;
 }
 
 footer {
@@ -239,7 +231,6 @@ footer {
   line-height: 150%;
 }
 
-
 /******************************
           PARTY
 ******************************/
@@ -272,15 +263,40 @@ footer {
 /******************************
           DETAILS
 ******************************/
-p.p-note {
-  display: block;
-  padding: 24px 0 0;
-  font-family: 'Playfair Display', serif;
-  font-size: 1.15em;
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.p-note a {
-  color: #E3E4D8;
+.story.details h2 {
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  letter-spacing: 1.5px;
+}
+
+.story.details h2.h2-italic {
+  font-style: italic;
+  font-size: 1.25em;
+}
+
+.story.details p {
+  font-size: 1.2em;
+}
+
+.story.details p.p-note {
+  display: block;
+  padding: 24px 0;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: .9em;
+}
+
+.story.details p.p-note a {
+  font-weight: 400;
+  color: #5B5B5B;
 }
 
 .break-fig8 {
@@ -292,8 +308,8 @@ p.p-note {
   width: 130px;
 }
 
-.break-heart {
-  background-image: url(break-heart.png);
+.break-heartknot {
+  background-image: url(break-heartknot.png);
   background-position: center;
   background-repeat: no-repeat;
   padding: 24px 0;
@@ -310,13 +326,13 @@ p.p-note {
 }
 
 iframe {
-  margin-top: 24px;
+  margin: 24px 0;
   overflow:hidden;
   overflow-x:hidden;
   overflow-y:hidden;
   height:100%;
   width:100%;
-  position:absolute;
+  position: absolute;
   left: 0;
 }
 
@@ -354,22 +370,27 @@ iframe {
           REGISTRY
 ******************************/
 p.p-blurb {
+  display: block;
+  margin: 24px auto;
+  width: 80%;
   font-family: 'Playfair Display', serif;
   font-size: 1em;
 }
 
 .registry {
-  margin: 24px auto 0;
+  margin: 0 auto;
   padding: 0;
   max-width: 950px;
   display: flex;
-  display: -webkit-flex;
+  flex-direction: column;
   justify-content: center;
   flex-flow: row wrap;
 }
 
 .registry li {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .registry a {
@@ -382,14 +403,20 @@ p.p-blurb {
   background: #E3E4D8;
   border: 10px solid #5B5B5B;
   box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+  position: relative;
 }
 
 .registry a img {
+  display: block;
   cursor: pointer;
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  margin: 0 auto;
+  height: 125px;
+  width: 350px;
+  margin: 6px;
+  padding: 12px;
+  object-fit: scale-down;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 @media (max-width: 1295px) {
@@ -413,8 +440,12 @@ p.p-blurb {
 }
 
 @media only screen and (max-width: 700px) {
+    .main {
+      margin-top: -125px;
+    }
+
     header {
-      height: 450px;
+      height: 475px;
     }
 
     .nav-menu {
@@ -504,20 +535,12 @@ p.p-blurb {
       height: 80%;
     }
 
-    .main {
-      overflow: hidden;
+    .h1-rspnsv {
+      font-size: 3em;
     }
 
-    .main-title-span {
-      display: block;
-    }
-
-    .registry {
-      min-width: 100%;
-    }
-
-    .registry li a {
-      width: 80%;
+    .registry a img {
+      width: 80%
     }
 
     .rsvp {
@@ -543,5 +566,9 @@ p.p-blurb {
     background-position: 100% 100%;
     width: 65%;
     height: 70%;
+  }
+
+  .registry a {
+    width: 250px;
   }
 }
