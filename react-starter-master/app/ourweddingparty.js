@@ -48,6 +48,7 @@ export default class OurWeddingParty extends Component {
           <div className='break-fig8'></div>
           {groomParty}
         </div>
+        <div className='break-heartknot'></div>
       </div>
     );
   }

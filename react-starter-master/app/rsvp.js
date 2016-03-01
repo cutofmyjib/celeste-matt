@@ -10,6 +10,7 @@ export default class Ceremony extends Component {
         <div className='rsvp'>
           <iframe src="https://celesteandmatt.app.rsvpify.com/" frameBorder="0" scrolling="yes"></iframe>
         </div>
+        <div className='break-heartknot'></div>
       </div>
     );
   }
