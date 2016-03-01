@@ -14,8 +14,7 @@ export default class Home extends Component {
         <ul className='registry'>
           <li><a href="https://www.amazon.com/registry/wedding/27E2LNVWRO8W1" target="_blank"><img src='../style/rgstry-amazon.png' /></a></li>
           <li><a href="http://www.rei.com/GiftRegistryDetails/GR128358809" target="_blank"><img src='../style/rgstry-rei.png' /></a></li>
-          <li><a href="http://www.crateandbarrel.com/gift-registry" target="_blank"><img src='../style/rgstry-crate.png' /></a></li>
-          <li><a href="http://www.target.com/gift-registry/wedding-registry" target="_blank"><img src='../style/rgstry-target.png' /></a></li>
+          <li><a href="http://www1.macys.com/registry/wedding/guest/?registryId=6529957" target="_blank"><img src='../style/rgstry-macys.png' /></a></li>
         </ul>
         <div className='break-heart'></div>
       </div>
