@@ -4,6 +4,7 @@ import {render} from 'react-dom';
 import Ceremony from './ceremony.js';
 import Home from './home.js';
 import Ourstory from './ourstory.js';
+import OurWeddingParty from './ourweddingparty.js';
 import Wrapper from './wrapper.js'
 import Registry from './registry.js'
 import Rsvp from './rsvp.js'
@@ -17,6 +18,7 @@ class App extends Component {
         <Route component={Wrapper}>
           <Route path="/" component={Home} />
           <Route path="/ourstory" component={Ourstory} />
+          <Route path="/ourweddingparty" component={OurWeddingParty} />
           <Route path="/details" component={Ceremony} />
           <Route path="/rsvp" component={Rsvp} />
           <Route path="/accomodations" component={Accomodations} />
