@@ -272,6 +272,17 @@ footer {
 /******************************
           DETAILS
 ******************************/
+p.p-note {
+  display: block;
+  padding: 24px 0 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15em;
+}
+
+.p-note a {
+  color: #E3E4D8;
+}
+
 .break-fig8 {
   background-image: url(break-fig8.png);
   background-position: center;
