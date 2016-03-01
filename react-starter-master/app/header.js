@@ -23,6 +23,7 @@ export default class Header extends Component {
               <ul className="sub-nav">
                 <li><Link to="/">Save the Date</Link></li>
                 <li><Link to="/ourstory">Our Story</Link></li>
+                <li><Link to="/ourweddingparty">Wedding Party</Link></li>
               </ul>
             </li>
             <li><Link to="/rsvp">RSVP</Link></li>
