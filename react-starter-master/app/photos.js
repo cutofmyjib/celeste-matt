@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
-import { Router, Route, Link } from 'react-router'
-import {render} from 'react-dom';
 import Photo from './photo';
-
-var Rebase = require('re-base');
-var base = Rebase.createClass('https://celeste-matt.firebaseio.com/gallery');
+import Rebase from 're-base';
+var base = Rebase.createClass('https://celeste-matt.firebaseio.com');
 
 export default class Photos extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      photos: []
+    };
   }
 
   componentDidMount(){
-    this.ref = base.bindToState('photos', {
+    this.photosRef = base.bindToState('photos', {
       context: this,
       state: 'photos',
       asArray: true
@@ -21,15 +20,14 @@ export default class Photos extends Component {
   }
 
   componentWillUnmount(){
-    base.removeBinding(this.ref);
+    base.removeBinding(this.photosRef);
   }
 
   render() {
-    if (this.state.photos) {
-      var photosArray = this.state.photos.map(function(data){
+    var photosArray = this.state.photos.map(function(data){
         return <Photo {...data} />
-      })
-    }
+    })
+
     return (
       <div>
         <div className='main'>
@@ -37,10 +35,6 @@ export default class Photos extends Component {
             {photosArray}
           </ul>
         </div>
-        <nav className='gallery-nav'>
-          <Link to="#" className='gallery-backward'></Link>
-          <Link to="#" className='gallery-forward'></Link>
-        </nav>
       </div>
     );
   }

@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { Router, Route, Link } from 'react-router'
-import {render} from 'react-dom';
 
-export default class Photos extends Component {
+export default class Photo extends Component {
   render() {
     return (
       <div>
