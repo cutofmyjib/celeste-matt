@@ -370,16 +370,22 @@ p.p-blurb {
 
 .registry li {
   list-style: none;
-  padding: 15px;
-  margin: 6px;
+}
+
+.registry a {
+  display: block;
+  cursor: pointer;
   width: 350px;
   height: 125px;
+  padding: 15px;
+  margin: 6px;
   background: #E3E4D8;
   border: 10px solid #5B5B5B;
   box-shadow: 2px 2px 2px rgba(0,0,0,.3);
 }
 
-.registry li img {
+.registry a img {
+  cursor: pointer;
   height: 100%;
   width: 100%;
   object-fit: contain;
