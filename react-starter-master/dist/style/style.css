@@ -239,6 +239,36 @@ footer {
   line-height: 150%;
 }
 
+
+/******************************
+          PARTY
+******************************/
+.profile {
+  text-align: left;
+  margin: 8px;
+}
+
+.main-subdiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.main-subdiv {
+  margin-top: 24px;
+}
+
+.profile h2 {
+  margin: 0;
+}
+
+.profile i {
+  display: inline-block;
+  font-size: .75em;
+  padding-bottom: 10px;
+}
+
 /******************************
           DETAILS
 ******************************/
@@ -308,47 +338,6 @@ iframe {
   object-fit: cover;
 }
 
-.gallery-nav {
-  display: flex;
-  display: -webkit-flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  width: 50%;
-}
-
-a.gallery-backward, a.gallery-forward {
-  opacity: 1;
-}
-
-.gallery-backward {
-  z-index: 1;
-  display: block;
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  background-image: url(gallery-arrow.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 95px;
-  width: 85px;
-}
-
-.gallery-forward {
-  z-index: 1;
-  display: block;
-  background-image: url(gallery-arrow.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 95px;
-  width: 85px;
-}
-
-a.gallery-backward:hover, a.gallery-forward:hover {
-  cursor: pointer;
-  opacity: .5;
-}
 
 /******************************
           REGISTRY
@@ -444,7 +433,7 @@ p.p-blurb {
     .nav-menu-container > li {
       width: 100%;
       text-align: left;
-      padding: 6px 0;
+      padding: 4px 0;
       z-index: 99;
     }
 
@@ -516,7 +505,7 @@ p.p-blurb {
       min-width: 100%;
     }
 
-    .registry li {
+    .registry li a {
       width: 80%;
     }
 
