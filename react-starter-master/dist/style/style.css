@@ -406,8 +406,9 @@ p.p-blurb {
 
 .registry li {
   list-style: none;
+  display: inline;
   padding: 0;
-  margin: 0;
+
 }
 
 .registry a {
@@ -426,13 +427,9 @@ p.p-blurb {
 .registry a img {
   display: block;
   cursor: pointer;
-  height: 125px;
   width: 350px;
-  margin: 6px;
-  padding: 12px;
-  object-fit: scale-down;
-  top: 0;
-  left: 0;
+  height: 125px;
+  object-fit: contain;
   position: absolute;
 }
 
@@ -556,8 +553,10 @@ p.p-blurb {
       font-size: 3em;
     }
 
+
     .registry a img {
-      width: 80%
+      width: 80%;
+      left: 25px;
     }
 
     .rsvp {
