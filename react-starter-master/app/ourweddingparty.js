@@ -34,7 +34,7 @@ export default class OurWeddingParty extends Component {
 
   render() {
     var brideParty = this.state.brideParty.map(function(data){
-        return <Profile {...data} />
+      return <Profile {...data} />
     })
     var groomParty = this.state.groomParty.map(function(data){
       return <Profile {...data} />
