@@ -33,6 +33,7 @@ export default class OurWeddingParty extends Component {
   }
 
   render() {
+    //map initially returns empty array
     var brideParty = this.state.brideParty.map(function(data){
       return <Profile {...data} />
     })
