@@ -16,7 +16,6 @@ export default class Ourstory extends Component {
       state: 'stories',
       asArray: true
     });
-
   }
 
   componentWillUnmount(){
