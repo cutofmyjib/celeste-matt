@@ -236,6 +236,11 @@ footer {
   padding-top: 24px;
 }
 
+.img-large {
+  width: 100%;
+  object-fit: cover;
+}
+
 /******************************
           PARTY
 ******************************/
@@ -307,7 +312,13 @@ footer {
   font-size: 1.2em;
 }
 
+.story.details p > a {
+  color: #5B5B5B;
+}
+
+
 .story.details p.p-note {
+  text-align: center;
   display: block;
   padding: 24px 0;
   font-family: 'Playfair Display', serif;
@@ -386,7 +397,6 @@ iframe {
   height: 100%;
   object-fit: cover;
 }
-
 
 /******************************
           REGISTRY
