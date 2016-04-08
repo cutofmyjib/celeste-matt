@@ -31,6 +31,10 @@ export default class Photos extends Component {
     return (
       <div>
         <div className='main'>
+          <div className='story details'>
+            <p className='p-note'>Take photos at our wedding events using WedPics under wedding Id: CELESTEMATTWED</p>
+            <div className='download'><a href="https://appsto.re/us/ZBZVG">Download it now</a></div>
+          </div>
           <ul className='gallery'>
             {photosArray}
           </ul>
