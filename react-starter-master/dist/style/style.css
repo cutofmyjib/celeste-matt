@@ -400,6 +400,19 @@ iframe {
   object-fit: cover;
 }
 
+.download a {
+  display: block;
+  font-family: 'Playfair Display SC', serif;
+  color: #E3E4D8;
+  background: #5B5B5B;
+  text-decoration: none;
+  padding: 6px 12px;
+}
+
+.download a:hover {
+  background: #A0A0A1;
+}
+
 /******************************
           REGISTRY
 ******************************/
@@ -467,6 +480,30 @@ p.p-blurb {
 @media (max-width: 950px) {
   .header-rose {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .story {
+    padding: 18px;
+  }
+
+  .profile {
+    flex-direction: column;
+  }
+
+  .profile-pic-container {
+    width: 100%;
+  }
+
+  .profile-pic {
+    width: 100%;
+    height: 275px;
+    padding-right: 0;
+  }
+
+  .profile-content {
+    width: 100%;
   }
 }
 
@@ -570,22 +607,8 @@ p.p-blurb {
       font-size: 3em;
     }
 
-    .profile {
-      flex-direction: column;
-    }
-
-    .profile-pic-container {
-      width: 100%;
-    }
-
-    .profile-pic {
-      width: 100%;
-      height: 275px;
-      padding-right: 0;
-    }
-
-    .profile-content {
-      width: 100%;
+    .story {
+      padding: 12px;
     }
 
     .registry a img {
