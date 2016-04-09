@@ -31,6 +31,7 @@ export default class Header extends Component {
               <ul className="sub-nav">
                 <li><Link to="/details">Details</Link></li>
                 <li><Link to="/accomodations">Accomodations</Link></li>
+                <li><Link to="/attractions">Attractions</Link></li>
               </ul>
             </li>
             <li><Link to="/registry">Registry</Link></li>
