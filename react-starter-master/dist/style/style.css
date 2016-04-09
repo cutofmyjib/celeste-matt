@@ -354,14 +354,22 @@ footer {
 }
 
 /******************************
+          ATTRACTIONS
+******************************/
+.map {
+  width: 850px;
+  height: 750px;
+}
+
+/******************************
           RSVP
 ******************************/
-.rsvp {
+.embed {
   overflow: hidden;
   height: 100vh;
 }
 
-iframe {
+.rsvp {
   margin: 24px 0;
   overflow:hidden;
   overflow-x:hidden;
@@ -482,6 +490,11 @@ p.p-blurb {
   .header-rose {
     display: none;
   }
+
+  .map {
+    width: 90%;
+    height: 700px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -506,6 +519,12 @@ p.p-blurb {
   .profile-content {
     width: 100%;
   }
+
+  .map {
+    width: 90%;
+    height: 700px;
+  }
+
 }
 
 @media only screen and (max-width: 700px) {
