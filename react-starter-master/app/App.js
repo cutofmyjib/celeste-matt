@@ -9,6 +9,7 @@ import Wrapper from './wrapper.js'
 import Registry from './registry.js'
 import Rsvp from './rsvp.js'
 import Accomodations from './accomodations.js'
+import Attractions from './attractions.js'
 import Photos from './photos.js'
 
 class App extends Component {
@@ -22,6 +23,7 @@ class App extends Component {
           <Route path="/details" component={Ceremony} />
           <Route path="/rsvp" component={Rsvp} />
           <Route path="/accomodations" component={Accomodations} />
+          <Route path="/attractions" component={Attractions} />
           <Route path="/registry" component={Registry} />
           <Route path="/photos" component={Photos} />
         </Route>
