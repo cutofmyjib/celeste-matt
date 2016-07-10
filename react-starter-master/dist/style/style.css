@@ -504,6 +504,11 @@ p.p-blurb {
 }
 
 @media only screen and (max-width: 800px) {
+  .embed {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
   .story {
     padding: 18px;
   }
@@ -645,8 +650,8 @@ p.p-blurb {
     .rsvp {
       position: relative;
       height: 650px;
-      overflow: scroll;
-      -webkit-overflow-scrolling: touch;
+/*      overflow: scroll;
+      -webkit-overflow-scrolling: touch;*/
       width: 100%;
     }
 
